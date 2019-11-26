@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2e7ec;
+    font-family: 'Hans Kendrick';
+    max-width: 1200px;
+    margin: 80px auto 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.car {
+    background: url("../img/car.jpg") no-repeat;
+    color: #fff;
+    width: 740px;
+    min-width: 360px;
+    min-height: 540px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.car__date {
+    padding: 0 0 10px 40px;
+    opacity: .5;
+    font-size: 13px;
+}
+
+.car__des {
+    padding: 0 0 40px 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.girl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 540px;
+    width: 360px;
+    background-color: #fff;
+    color: #1d1d1d;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.girl__img img,
+.twogirls__img img,
+.boots__img img,
+.city__img img {
+    width: 100%;
+}
+
+.girl__date {
+    font-size: 13px;
+    opacity: 0.5;
+    padding-left: 28px;
+}
+
+.girl__des {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-left: 28px;
+    font-weight: 700;
+}
+
+.girl__author {
+    padding: 0 0 20px 28px;
+    margin-top: 10px;
+}
+
+.twogirls,
+.boots,
+.city {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 540px;
+    width: 360px;
+    background-color: #fff;
+    color: #1d1d1d;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.twogirls__date,
+.boots__date,
+.city__date {
+    font-size: 13px;
+    opacity: 0.5;
+    padding-left: 28px;
+}
+
+.twogirls__des,
+.boots__des,
+.city__des {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-left: 28px;
+    font-weight: 700;
+}
+
+.twogirls__author,
+.boots__author,
+.city__author {
+    padding: 0 0 20px 28px;
+}
+
+.city__des,
+.city__date {
+    padding-top: 3px;
+}
+
+.boots__des {
+    padding-top: 60px;
+}
+
+.car:hover,
+.girl:hover,
+.twogirls:hover,
+.boots:hover,
+.city:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 1, 0.5);
+    transition: transform 0.2s linear;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #acb7c0;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 80px 0;
+    user-select: none;
+}
+
+footer img {
+    padding-right: 20px;
+}
+
+@font-face {
+    font-family: 'Hans Kendrick';
+    src: url(../fonts/NeueHansKendrick-Regular.ttf);
+}
